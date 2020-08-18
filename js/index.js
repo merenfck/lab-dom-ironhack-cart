@@ -13,7 +13,15 @@ function updateSubtotal(product) {
   //... your code goes here
 }
 
+let unitPrice = +product.querySelector(".price span")innerText
+let quantity = +product.querySelector("quantity input").value
+let subtotal = product.querySelector("subtotal span")
+
 function calculateAll() {
+
+  const singleProduct = document.querySelector(".product")
+  updateSubtotal(singleProduct)
+
   // code in the following two lines is added just for testing purposes.
   // it runs when only iteration 1 is completed. at later point, it can be removed.
   const singleProduct = document.querySelector('.product');
